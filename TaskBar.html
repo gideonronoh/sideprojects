@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBar</title>
+    <style>
+  * {
+    margin: 0;
+    padding:0; 
+    box-sizing: border-box; }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+  }
+  nav a{
+    position: relative;
+    font-size: 1,100;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: 0.5s;
+  }
+  nav a:hover{
+    color: #0ef;
+  }
+  nav a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    z-index: -1;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scale(0) translate Y(50px);
+    opacity:0;
+    transition: 0.5s;    
+}
+nav a :hover span{
+    transform: scale(1) translate Y(0);
+    opacity:1;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home <span></span></a>
+        <a href="#">About <span></span></a>
+        <a href="#">Contact <span></span></a>
+        <a href="#">Help</a>
+    </nav>
+</body>
+</html>
