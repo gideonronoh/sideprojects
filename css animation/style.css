@@ -1,0 +1,44 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    position: relative;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    /*a negative duration will bring the impression that it was in play before you clicked on it*/
+    animation-iteration-count: 3s;
+    animation-direction: normal;
+    transition-timing-function: ease;
+    animation-fill-mode: forwards;
+    /*this single line works all the properties*/
+    animation: colorChange  5sease  2s  3 normal  fillmode  ;
+}
+
+@keyframes colorChange {
+  0%{
+    background-color: red;
+    top: 6px;
+    left: 0px;
+  }
+  25%{
+    background-color: yellow;
+    left:50px ;
+    top:0 ;
+  }
+  50%{
+    background-color: blue;
+    left: 500px;
+    top: 500px;
+  }
+  75%{
+    background-color: green;
+    left: 0px;
+    top: 500px;
+  }
+  100%{
+    background-color: violet;
+    top: 250px;
+    left: 250px; ;
+  }
+}
